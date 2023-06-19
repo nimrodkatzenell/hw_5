@@ -3,12 +3,12 @@ package hw_5;
 public class  Salesman {
 	private String name;
 	private int productsCount;
-	private double [] quantities;
+	private int [] quantities;
 	private double rate;
 	private double pmt;
 	private double[] prices;
-	public Salesman(String name , int productsCount,double[] quantities ,double rate,double pmt) {
-		this.quantities = new double[productsCount];
+	public Salesman(String name , int productsCount ,double rate,double pmt) {
+		this.quantities = new int[productsCount];
 		this.prices = new double[productsCount];
 		this.setName(name);
 		this.setProductCount(productsCount);
@@ -27,6 +27,12 @@ public class  Salesman {
 	}
 	public void setPmt(double pmt) {
 		this.pmt=pmt;
+	}
+	public void setQuantaties(int index,int m) {
+		quantities[index]=m;
+	}
+	public void setPrices(int index,double m) {
+		prices[index]=m;
 	}
 	
 	public String getName() {
