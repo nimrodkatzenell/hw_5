@@ -6,6 +6,7 @@ public class MainTest {
 	public static void main(String[] args) throws Exception {
 		Scanner scanner = new Scanner(System.in);
 		Airport airport= new Airport();
+
 		boolean flag = true;
 		while(flag) {
 			try {
